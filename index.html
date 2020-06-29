@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>esautob</title>
+    <link rel="stylesheet" href="vocab/themes/blue/style.css" type="text/css" media="print, projection, screen" />
+    <script src="vocab/js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="vocab/js/bootstrap.js"></script>
+    <script type="text/javascript" id="js">
+	    $(document).ready(function() 
+		    { 
+		    	$("#tablesorter-demo").tablesorter(); 
+		    	$("#tablesorter-demo").stickyTableHeaders(); 
+		    	$('[data-toggle="tooltip"]').tooltip(); 
+		    } 
+	    ); 
+    </script>
+
+    <!-- Le styles -->
+    <link href="vocab/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="vocab/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+  </head>
+
+  <body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Vocabularies</a></li>
+        <li><a href="report.html">Vocabulary report</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+ </div>
+    <div class="container">
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>esautob landing page</h1>
+        <p class="lead">Here you can find the list of vocabularies that have been found on esautob.</p>
+      </div>
+      <hr>
+<div class="row"> 
+</div>
+<br>
+<table id="tablesorter-demo" class="tablesorter table table-hover table-responsive">
+<thead>
+<tr>
+<th class="col-md-2">Ontology</th>
+<th class="col-md-1">Serialization</th>
+<th class="col-md-2">License</th>
+<th class="col-md-1">Language</th>
+<th class="col-md-6">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr id="tr1">
+<td><a href = "http://vocab.ciudadesabiertas.es/def/transporte/autobus#" target="_blank">Vocabulary for the representation of data on public transport by bus.</a> </td><td>
+<a href="ontologies/ontology.ttl"><span class="label label-primary">TURTLE</span></a>
+</td>
+<td><a href="https://creativecommons.org/licenses/by/4.0" target="_blank"> <span class="label label-success">https://creativecommons.org/l...</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+<td>
+<p id="collapse1" data-toggle="collapse" >
+The Bus Vocabulary works with the European standard TransModel (EN 12896 made by CEN, European Committee for Standardization) which has been ... <a class="more1">See more</a>
+</p>
+<script>
+$('#collapse1').click(function () {
+if($('a').hasClass('more1'))
+{
+$('#collapse1').html('The Bus Vocabulary works with the European standard TransModel (EN 12896 made by CEN, European Committee for Standardization) which has been adopted by the European regulation 2017/1926 and follows the European directive on intelligent transport services (Directive 2010/40/EU on ITS,Intelligent Transport System).<br>Since December 2019 this regulation has come into force and dictates that any European operator or transport authority must offer its data in formats compatible with Transmodel.<br>This ontology is based on the previous work carried out during the SNAP project (snap-project.eu) where a first version of the Transmodel ontology was developed.<br>In general, the following Transmodel concepts have been reused: Operator, Authority, Line, Route, Points on a Route, Trip Pattern, Points on a Trip Pattern, Stop, Trip associated to a Trip Pattern, Timetables and Frequencies of a Trip and Service Calendar.<br>This vocabulary makes other relations: with the concept of Incidence that has been developed in the Traffic vocabulary of the same Open Cities project; with the Postal Address vocabulary; with geosparql for the geographical representation.<br>The vocabulary has been divided into three main parts:<br>- Organizations (authority and operator) and their lines<br>- Routes and points thereof, including stops.<br>- Journeys and travel patterns<br>	  <a class="less1">See less<a>'); 
+}
+else
+{      
+$('#collapse1').html('The Bus Vocabulary works with the European standard TransModel (EN 12896 made by CEN, European Committee for Standardization) which has been ...  <a  class="more1">See more</a>'); 
+}
+}); 
+</script>
+</td>
+</tr><tr id="tr2">
+<td><a href = "http://vocab.ciudadesabiertas.es/def/transporte/autobus#" target="_blank">Vocabulary for the representation of data on public transport by bus.</a> </td><td>
+<a href="ontologies/ontology.xml"><span class="label label-primary">RDF/XML</span></a>
+</td>
+<td><a href="https://creativecommons.org/licenses/by/4.0" target="_blank"> <span class="label label-success">https://creativecommons.org/l...</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+<td>
+<p id="collapse2" data-toggle="collapse" >
+The Bus Vocabulary works with the European standard TransModel (EN 12896 made by CEN, European Committee for Standardization) which has been ... <a class="more2">See more</a>
+</p>
+<script>
+$('#collapse2').click(function () {
+if($('a').hasClass('more2'))
+{
+$('#collapse2').html('The Bus Vocabulary works with the European standard TransModel (EN 12896 made by CEN, European Committee for Standardization) which has been adopted by the European regulation 2017/1926 and follows the European directive on intelligent transport services (Directive 2010/40/EU on ITS,Intelligent Transport System).<br>Since December 2019 this regulation has come into force and dictates that any European operator or transport authority must offer its data in formats compatible with Transmodel.<br>This ontology is based on the previous work carried out during the SNAP project (snap-project.eu) where a first version of the Transmodel ontology was developed.<br>In general, the following Transmodel concepts have been reused: Operator, Authority, Line, Route, Points on a Route, Trip Pattern, Points on a Trip Pattern, Stop, Trip associated to a Trip Pattern, Timetables and Frequencies of a Trip and Service Calendar.<br>This vocabulary makes other relations: with the concept of Incidence that has been developed in the Traffic vocabulary of the same Open Cities project; with the Postal Address vocabulary; with geosparql for the geographical representation.<br>The vocabulary has been divided into three main parts:<br>- Organizations (authority and operator) and their lines<br>- Routes and points thereof, including stops.<br>- Journeys and travel patterns<br>	  <a class="less2">See less<a>'); 
+}
+else
+{      
+$('#collapse2').html('The Bus Vocabulary works with the European standard TransModel (EN 12896 made by CEN, European Committee for Standardization) which has been ...  <a  class="more2">See more</a>'); 
+}
+}); 
+</script>
+</td>
+</tr><tr id="tr3">
+<td><a href = "http://vocab.ciudadesabiertas.es/def/transporte/autobus#" target="_blank">Vocabulary for the representation of data on public transport by bus.</a> </td><td>
+</td>
+<td><a href="https://creativecommons.org/licenses/by/4.0" target="_blank"> <span class="label label-success">https://creativecommons.org/l...</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+<td>
+<p id="collapse3" data-toggle="collapse" >
+This vocabulary is being developed in the context of the action on open data of the project "Platform of Open, Collaborative and Interoperable ... <a class="more3">See more</a>
+</p>
+<script>
+$('#collapse3').click(function () {
+if($('a').hasClass('more3'))
+{
+$('#collapse3').html('This vocabulary is being developed in the context of the action on open data of the project "Platform of Open, Collaborative and Interoperable Government" of the "II Call for Intelligent Cities" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Progress of the Ministry.  <a class="less3">See less<a>'); 
+}
+else
+{      
+$('#collapse3').html('This vocabulary is being developed in the context of the action on open data of the project "Platform of Open, Collaborative and Interoperable ...  <a  class="more3">See more</a>'); 
+}
+}); 
+</script>
+</td>
+</tr></tbody></table>
+<hr>
+      <footer class="footer">
+           <footer class="footer">
+            <div class="row">
+    	<div class="col-md-10">
+    		Page created with  <a href = "https://github.com/dgarijo/vocabLite" target="_blank">VocabLite</a> (<a href="http://oeg-upm.net/">Ontology Engineering Group</a>)
+	        <br>
+    	Built with <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
+ 	        <br>
+	        Latest revision June, 2020
+        </div>
+		<div class="col-md-2">
+			<a href="https://github.com/dgarijo/vocabLite"><img width="140px"src="vocab/logoLite.png"></img></a>
+		</div>
+      </footer>      </div>
+      </footer>
+    </div> <!-- /container -->
